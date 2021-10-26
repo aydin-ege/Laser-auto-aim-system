@@ -1,0 +1,665 @@
+
+*** Running vivado
+    with args -log TopModule.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopModule.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source TopModule.tcl -notrace
+Command: synth_design -top TopModule -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2404 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 396.457 ; gain = 103.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopModule' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/TopModule.vhd:64]
+INFO: [Synth 8-3491] module 'ClockController' declared at 'D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/ClockController_stub.vhdl:5' bound to instance 'u_ClockController' of component 'ClockController' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/TopModule.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'ClockController' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/ClockController_stub.vhdl:17]
+INFO: [Synth 8-638] synthesizing module 'DebouncedReset' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/DebouncedReset.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'DebouncedReset' (1#1) [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/DebouncedReset.vhd:41]
+INFO: [Synth 8-3491] module 'oddr_xCLK' declared at 'D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/oddr_xCLK_stub.vhdl:5' bound to instance 'u_oddr' of component 'oddr_xCLK' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/TopModule.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'oddr_xCLK' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/oddr_xCLK_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'ov7670_init' declared at 'D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/ov7670_init.v:23' bound to instance 'u_CameraController' of component 'ov7670_init' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/TopModule.vhd:197]
+INFO: [Synth 8-6157] synthesizing module 'ov7670_init' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/ov7670_init.v:23]
+	Parameter LUT_SIZE bound to: 168 - type: integer 
+	Parameter CLK_Freq bound to: 100000000 - type: integer 
+	Parameter I2C_Freq bound to: 10000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/ov7670_init.v:105]
+INFO: [Synth 8-6157] synthesizing module 'I2C_OV7670_RGB565_Config2' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/I2C_OV7670_RGB565_Config2.v:25]
+	Parameter Read_DATA bound to: 0 - type: integer 
+	Parameter SET_OV7670 bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'I2C_OV7670_RGB565_Config2' (2#1) [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/I2C_OV7670_RGB565_Config2.v:25]
+INFO: [Synth 8-6157] synthesizing module 'I2C_Controller2' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/I2C_Controller2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_Controller2' (3#1) [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/I2C_Controller2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ov7670_init' (4#1) [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/ov7670_init.v:23]
+INFO: [Synth 8-638] synthesizing module 'CameraDataCapture' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/CameraDataCapture.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'CameraDataCapture' (5#1) [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/CameraDataCapture.vhd:38]
+INFO: [Synth 8-3491] module 'frameBuffer' declared at 'D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/frameBuffer_stub.vhdl:5' bound to instance 'u_frameBuffer' of component 'frameBuffer' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/TopModule.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'frameBuffer' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/frameBuffer_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'initialFrame' declared at 'D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/initialFrame_stub.vhdl:5' bound to instance 'u_initial_frame' of component 'initialFrame' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/TopModule.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'initialFrame' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/initialFrame_stub.vhdl:19]
+INFO: [Synth 8-638] synthesizing module 'VGAController' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/VGAController.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'VGA' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/VGA.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (6#1) [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/VGA.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'VGAController' (7#1) [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/VGAController.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'BrightestPoint' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/BrightestPoint.vhd:20]
+WARNING: [Synth 8-5640] Port 'm_axis_dout_tvalid' is missing in component declaration [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/BrightestPoint.vhd:21]
+WARNING: [Synth 8-5640] Port 'm_axis_dout_tuser' is missing in component declaration [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/BrightestPoint.vhd:21]
+INFO: [Synth 8-3491] module 'divider' declared at 'D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/divider_stub.vhdl:5' bound to instance 'u_divider_x' of component 'divider' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/BrightestPoint.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'divider' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/divider_stub.vhdl:19]
+WARNING: [Synth 8-5640] Port 'm_axis_dout_tvalid' is missing in component declaration [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/BrightestPoint.vhd:21]
+WARNING: [Synth 8-5640] Port 'm_axis_dout_tuser' is missing in component declaration [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/BrightestPoint.vhd:21]
+INFO: [Synth 8-3491] module 'divider' declared at 'D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/divider_stub.vhdl:5' bound to instance 'u_divider_y' of component 'divider' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/BrightestPoint.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'BrightestPoint' (8#1) [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/BrightestPoint.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'calibrateServo' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/calibrateServo.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'button_to_pos' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/imports/new/button_to_pos.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'button_to_pos' (9#1) [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/imports/new/button_to_pos.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'calibrateServo' (10#1) [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/calibrateServo.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'locationMapper' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/locationMapper.vhd:58]
+	Parameter G_width bound to: 32'b00000000000000000000001010000000 
+INFO: [Synth 8-3491] module 'mult_gen_0' declared at 'D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/mult_gen_0_stub.vhdl:5' bound to instance 'u_multiplier' of component 'mult_gen_0' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/locationMapper.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/mult_gen_0_stub.vhdl:15]
+WARNING: [Synth 8-5640] Port 'm_axis_dout_tvalid' is missing in component declaration [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/locationMapper.vhd:67]
+WARNING: [Synth 8-5640] Port 'm_axis_dout_tuser' is missing in component declaration [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/locationMapper.vhd:67]
+INFO: [Synth 8-3491] module 'map_divider' declared at 'D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/map_divider_stub.vhdl:5' bound to instance 'u_divider' of component 'map_divider' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/locationMapper.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'map_divider' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/map_divider_stub.vhdl:19]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_servo_loc_reg' and it is trimmed from '32' to '8' bits. [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/locationMapper.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'locationMapper' (11#1) [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/locationMapper.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'locationMapper__parameterized0' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/locationMapper.vhd:58]
+	Parameter G_width bound to: 32'b00000000000000000000000011110000 
+INFO: [Synth 8-3491] module 'mult_gen_0' declared at 'D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/mult_gen_0_stub.vhdl:5' bound to instance 'u_multiplier' of component 'mult_gen_0' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/locationMapper.vhd:92]
+WARNING: [Synth 8-5640] Port 'm_axis_dout_tvalid' is missing in component declaration [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/locationMapper.vhd:67]
+WARNING: [Synth 8-5640] Port 'm_axis_dout_tuser' is missing in component declaration [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/locationMapper.vhd:67]
+INFO: [Synth 8-3491] module 'map_divider' declared at 'D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-3020-Ege-PC/realtime/map_divider_stub.vhdl:5' bound to instance 'u_divider' of component 'map_divider' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/locationMapper.vhd:99]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_servo_loc_reg' and it is trimmed from '32' to '8' bits. [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/locationMapper.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'locationMapper__parameterized0' (11#1) [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/locationMapper.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'servo' [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/imports/new/servo.vhd:13]
+WARNING: [Synth 8-6014] Unused sequential element v_timing_reg was removed.  [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/imports/new/servo.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'servo' (12#1) [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/imports/new/servo.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'TopModule' (13#1) [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/TopModule.vhd:64]
+WARNING: [Synth 8-3331] design CameraDataCapture has unconnected port i_data[4]
+WARNING: [Synth 8-3331] design CameraDataCapture has unconnected port i_data[3]
+WARNING: [Synth 8-3331] design CameraDataCapture has unconnected port i_data[2]
+WARNING: [Synth 8-3331] design CameraDataCapture has unconnected port i_data[1]
+WARNING: [Synth 8-3331] design CameraDataCapture has unconnected port i_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 453.918 ; gain = 161.445
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u_BrightestPoint:i_data_1[3] to constant 0 [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/TopModule.vhd:264]
+WARNING: [Synth 8-3295] tying undriven pin u_BrightestPoint:i_data_2[3] to constant 0 [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/new/TopModule.vhd:264]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 453.918 ; gain = 161.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 453.918 ; gain = 161.445
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/ClockController/ClockController/ClockController_in_context.xdc] for cell 'u_ClockController'
+Finished Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/ClockController/ClockController/ClockController_in_context.xdc] for cell 'u_ClockController'
+Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/initialFrame/initialFrame/initialFrame_in_context.xdc] for cell 'u_initial_frame'
+Finished Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/initialFrame/initialFrame/initialFrame_in_context.xdc] for cell 'u_initial_frame'
+Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'u_locationMapper_x/u_multiplier'
+Finished Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'u_locationMapper_x/u_multiplier'
+Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'u_locationMapper_y/u_multiplier'
+Finished Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'u_locationMapper_y/u_multiplier'
+Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/frameBuffer/frameBuffer/frameBuffer_in_context.xdc] for cell 'u_frameBuffer'
+Finished Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/frameBuffer/frameBuffer/frameBuffer_in_context.xdc] for cell 'u_frameBuffer'
+Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/oddr_xCLK/oddr_xCLK/oddr_xCLK_in_context.xdc] for cell 'u_oddr'
+Finished Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/oddr_xCLK/oddr_xCLK/oddr_xCLK_in_context.xdc] for cell 'u_oddr'
+Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/divider/divider/divider_in_context.xdc] for cell 'u_BrightestPoint/u_divider_x'
+Finished Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/divider/divider/divider_in_context.xdc] for cell 'u_BrightestPoint/u_divider_x'
+Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/divider/divider/divider_in_context.xdc] for cell 'u_BrightestPoint/u_divider_y'
+Finished Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/divider/divider/divider_in_context.xdc] for cell 'u_BrightestPoint/u_divider_y'
+Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/map_divider/map_divider/map_divider_in_context.xdc] for cell 'u_locationMapper_x/u_divider'
+Finished Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/map_divider/map_divider/map_divider_in_context.xdc] for cell 'u_locationMapper_x/u_divider'
+Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/map_divider/map_divider/map_divider_in_context.xdc] for cell 'u_locationMapper_y/u_divider'
+Finished Parsing XDC File [d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/map_divider/map_divider/map_divider_in_context.xdc] for cell 'u_locationMapper_y/u_divider'
+Parsing XDC File [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/constrs_1/new/constraints.xdc]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'i_camera_data[*]' matched to 'port' objects. [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/constrs_1/new/constraints.xdc:129]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'i_camera_data[*]' matched to 'port' objects. [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/constrs_1/new/constraints.xdc:130]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'i_camera_HREF' matched to 'port' objects. [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/constrs_1/new/constraints.xdc:131]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'i_camera_HREF' matched to 'port' objects. [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/constrs_1/new/constraints.xdc:132]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'i_camera_pclk' matched to 'clock' objects. [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/constrs_1/new/constraints.xdc:133]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'i_camera_pclk' matched to 'clock' objects. [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/constrs_1/new/constraints.xdc:134]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+Finished Parsing XDC File [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopModule_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopModule_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 796.164 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 796.164 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 796.164 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 796.164 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'u_BrightestPoint/u_divider_x' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'u_BrightestPoint/u_divider_y' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'u_locationMapper_x/u_divider' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_locationMapper_x/u_multiplier' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'u_locationMapper_y/u_divider' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_locationMapper_y/u_multiplier' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 796.164 ; gain = 503.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 796.164 ; gain = 503.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for i_clk. (constraint file  d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/ClockController/ClockController/ClockController_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk. (constraint file  d:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.srcs/sources_1/ip/ClockController/ClockController/ClockController_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for u_ClockController. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_initial_frame. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_locationMapper_x/u_multiplier. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_locationMapper_y/u_multiplier. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_frameBuffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_oddr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_BrightestPoint/u_divider_x. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_BrightestPoint/u_divider_y. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_locationMapper_x/u_divider. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_locationMapper_y/u_divider. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 796.164 ; gain = 503.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "LUT_DATA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'mSetup_ST_reg' in module 'ov7670_init'
+INFO: [Synth 8-5544] ROM "LUT_INDEX" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mSetup_ST" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "s_VCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_totalY" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mSetup_ST_reg' using encoding 'sequential' in module 'ov7670_init'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 796.164 ; gain = 503.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   3 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 10    
+	   2 Input      6 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 11    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 29    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 8     
+	  13 Input     15 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	  62 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 1     
+	  59 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 43    
+	  41 Input      1 Bit        Muxes := 5     
+	  60 Input      1 Bit        Muxes := 7     
+	  59 Input      1 Bit        Muxes := 1     
+	  42 Input      1 Bit        Muxes := 4     
+	  19 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TopModule 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+Module DebouncedReset 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module I2C_OV7670_RGB565_Config2 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     15 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+Module I2C_Controller2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	  62 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  59 Input      5 Bit        Muxes := 1     
+	  41 Input      1 Bit        Muxes := 5     
+	  60 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 30    
+	  59 Input      1 Bit        Muxes := 1     
+	  42 Input      1 Bit        Muxes := 4     
+	  19 Input      1 Bit        Muxes := 1     
+Module ov7670_init 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 5     
+Module CameraDataCapture 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module VGA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module VGAController 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module BrightestPoint 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module button_to_pos 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module calibrateServo 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 4     
+Module locationMapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module locationMapper__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module servo 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5587] ROM size for "u_CameraController/u_I2C_OV7670_RGB565_Config/LUT_DATA" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "u_VGAController/u_VGA/s_VCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_BrightestPoint/s_totalY" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design TopModule has unconnected port i_camera_data[4]
+WARNING: [Synth 8-3331] design TopModule has unconnected port i_camera_data[3]
+WARNING: [Synth 8-3331] design TopModule has unconnected port i_camera_data[2]
+WARNING: [Synth 8-3331] design TopModule has unconnected port i_camera_data[1]
+WARNING: [Synth 8-3331] design TopModule has unconnected port i_camera_data[0]
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_totalX_reg[26]' (FDRE) to 'u_BrightestPoint/s_result_totalY_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_totalX_reg[27]' (FDRE) to 'u_BrightestPoint/s_result_totalY_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_totalX_reg[28]' (FDRE) to 'u_BrightestPoint/s_result_totalY_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_totalX_reg[29]' (FDRE) to 'u_BrightestPoint/s_result_totalY_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_totalX_reg[30]' (FDRE) to 'u_BrightestPoint/s_result_totalY_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_totalX_reg[31]' (FDRE) to 'u_BrightestPoint/s_result_totalY_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_totalY_reg[26]' (FDRE) to 'u_BrightestPoint/s_result_totalY_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_totalY_reg[27]' (FDRE) to 'u_BrightestPoint/s_result_totalY_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_totalY_reg[28]' (FDRE) to 'u_BrightestPoint/s_result_totalY_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_totalY_reg[29]' (FDRE) to 'u_BrightestPoint/s_result_totalY_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_totalY_reg[30]' (FDRE) to 'u_BrightestPoint/s_result_totalY_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_BrightestPoint/s_result_totalY_reg[31] )
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_count_reg[18]' (FDRE) to 'u_BrightestPoint/s_result_count_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_count_reg[19]' (FDRE) to 'u_BrightestPoint/s_result_count_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_count_reg[20]' (FDRE) to 'u_BrightestPoint/s_result_count_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_count_reg[21]' (FDRE) to 'u_BrightestPoint/s_result_count_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_BrightestPoint/s_result_count_reg[22]' (FDRE) to 'u_BrightestPoint/s_result_count_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_CameraController/mI2C_CLK_DIV_reg[13]' (FDC) to 'u_CameraController/mI2C_CLK_DIV_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_CameraController/mI2C_CLK_DIV_reg[14]' (FDC) to 'u_CameraController/mI2C_CLK_DIV_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_CameraController/mI2C_CLK_DIV_reg[15] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 796.164 ; gain = 503.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++----------------+---------------------------------------------+---------------+----------------+
+|Module Name     | RTL Object                                  | Depth x Width | Implemented As | 
++----------------+---------------------------------------------+---------------+----------------+
+|I2C_Controller2 | I2C_BIT                                     | 64x1          | LUT            | 
+|TopModule       | u_CameraController/u_I2C_Controller/I2C_BIT | 64x1          | LUT            | 
++----------------+---------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_ClockController/clk_out1' to pin 'u_ClockController/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_ClockController/clk_out2' to pin 'u_ClockController/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_ClockController/clk_out3' to pin 'u_ClockController/bbstub_clk_out3/O'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 796.164 ; gain = 503.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 816.914 ; gain = 524.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 825.945 ; gain = 533.473
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop u_DebouncedReset/o_reset_reg is being inverted and renamed to u_DebouncedReset/o_reset_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 825.945 ; gain = 533.473
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 825.945 ; gain = 533.473
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 825.945 ; gain = 533.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 825.945 ; gain = 533.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 825.945 ; gain = 533.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 825.945 ; gain = 533.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |ClockController |         1|
+|2     |oddr_xCLK       |         1|
+|3     |frameBuffer     |         1|
+|4     |initialFrame    |         1|
+|5     |divider         |         2|
+|6     |mult_gen_0      |         2|
+|7     |map_divider     |         2|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+-----------------------+------+
+|      |Cell                   |Count |
++------+-----------------------+------+
+|1     |ClockController_bbox_3 |     1|
+|2     |divider_bbox_7         |     1|
+|3     |divider_bbox_8         |     1|
+|4     |frameBuffer_bbox_5     |     1|
+|5     |initialFrame_bbox_6    |     1|
+|6     |map_divider_bbox_10    |     1|
+|7     |map_divider_bbox_12    |     1|
+|8     |mult_gen_0_bbox_11     |     1|
+|9     |mult_gen_0_bbox_9      |     1|
+|10    |oddr_xCLK_bbox_4       |     1|
+|11    |BUFG                   |     1|
+|12    |CARRY4                 |    92|
+|13    |LUT1                   |    23|
+|14    |LUT2                   |   128|
+|15    |LUT3                   |    33|
+|16    |LUT4                   |    62|
+|17    |LUT5                   |    60|
+|18    |LUT6                   |   170|
+|19    |MUXF7                  |     2|
+|20    |FDCE                   |    35|
+|21    |FDPE                   |     8|
+|22    |FDRE                   |   464|
+|23    |IBUF                   |    15|
+|24    |IOBUF                  |     1|
+|25    |OBUF                   |    20|
++------+-----------------------+------+
+
+Report Instance Areas: 
++------+----------------------+-------------------------------+------+
+|      |Instance              |Module                         |Cells |
++------+----------------------+-------------------------------+------+
+|1     |top                   |                               |  1437|
+|2     |  u_BrightestPoint    |BrightestPoint                 |   286|
+|3     |  u_CameraController  |ov7670_init                    |   211|
+|4     |    u_I2C_Controller  |I2C_Controller2                |   150|
+|5     |  u_CameraDataCapture |CameraDataCapture              |    36|
+|6     |  u_DebouncedReset    |DebouncedReset                 |    28|
+|7     |  u_VGAController     |VGAController                  |   206|
+|8     |    u_VGA             |VGA                            |    77|
+|9     |  u_calibrateServo    |calibrateServo                 |   200|
+|10    |    u_button          |button_to_pos                  |    75|
+|11    |    u_button2         |button_to_pos_1                |    75|
+|12    |  u_locationMapper_x  |locationMapper                 |   121|
+|13    |  u_locationMapper_y  |locationMapper__parameterized0 |   121|
+|14    |  u_servo_x           |servo                          |    90|
+|15    |  u_servo_y           |servo_0                        |    89|
++------+----------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 825.945 ; gain = 533.473
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 825.945 ; gain = 191.227
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 825.945 ; gain = 533.473
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 95 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 825.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+101 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 825.945 ; gain = 544.941
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 825.945 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Desktop/EE102/Project/VHDL/FinalProject/FinalProject.runs/synth_1/TopModule.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopModule_utilization_synth.rpt -pb TopModule_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 31 05:40:18 2019...
